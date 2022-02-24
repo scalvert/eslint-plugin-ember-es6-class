@@ -11,6 +11,7 @@
     "type": "git",
     "url": "https://github.com/scalvert/eslint-plugin-ember-es6-class.git"
   },
+  "license": "MIT",
   "author": "scalvert",
   "main": "lib/index.js",
   "scripts": {
@@ -25,10 +26,29 @@
     "eslint-plugin-prettier": "^2.6.2",
     "mocha": "^3.1.2",
     "mocha-eslint": "^4.1.0",
-    "prettier": "^1.14.2"
+    "prettier": "^1.14.2",
+    "release-it": "^14.2.1",
+    "release-it-lerna-changelog": "^3.1.0"
   },
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
+  "release-it": {
+    "plugins": {
+      "release-it-lerna-changelog": {
+        "infile": "CHANGELOG.md",
+        "launchEditor": true
+      }
+    },
+    "git": {
+      "tagName": "v${version}"
+    },
+    "github": {
+      "release": true,
+      "tokenRef": "GITHUB_AUTH"
+    }
+  }
 }
