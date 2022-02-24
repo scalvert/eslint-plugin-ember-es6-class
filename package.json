@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-ember-es6-class",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Eslint plugin for enforcing usages of ember es6 classes.",
   "keywords": [
     "eslint",
