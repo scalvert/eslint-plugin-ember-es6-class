@@ -11,7 +11,7 @@
     "type": "git",
     "url": "https://github.com/scalvert/eslint-plugin-ember-es6-class.git"
   },
-  "license": "ISC",
+  "license": "MIT",
   "author": "scalvert",
   "main": "lib/index.js",
   "scripts": {
